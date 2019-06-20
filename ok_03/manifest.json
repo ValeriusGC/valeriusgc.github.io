@@ -4,7 +4,7 @@
   "description": "A web app that uses AngularDart Components",
   "lang": "en-US",
   "start_url": "/ok_03",
-  "scope": "/ok_03",
+  "scope": "/ok_03/",
   "display": "standalone",
   "orientation": "any",
   "theme_color": "#ffffff",
