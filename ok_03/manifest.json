@@ -1,14 +1,14 @@
 {
-  "name": "angular_tour_of_heroes",
-  "short_name": "angular_tour_of_heroes",
+  "name": "angular_tour_of_heroes!!!",
+  "short_name": "angular_tour_of_heroes!!!",
   "description": "A web app that uses AngularDart Components",
   "lang": "en-US",
   "start_url": "/ok_03",
   "scope": "/ok_03/",
   "display": "standalone",
   "orientation": "any",
-  "theme_color": "#ffffff",
-  "background_color": "#ffffff",
+  "theme_color": "#ffeeff",
+  "background_color": "#ffccff",
    "icons": [
     {
       "src": "/icons/android-icon-36x36.png",
