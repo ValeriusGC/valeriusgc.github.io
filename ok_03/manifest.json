@@ -3,7 +3,7 @@
   "short_name": "angular_tour_of_heroes",
   "description": "A web app that uses AngularDart Components",
   "lang": "en-US",
-  "start_url": "/",
+  "start_url": "/ok_03",
   "scope": "/",
   "display": "standalone",
   "orientation": "any",
