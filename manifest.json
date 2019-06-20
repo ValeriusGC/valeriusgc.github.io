@@ -9,7 +9,7 @@
   "orientation": "any",
   "theme_color": "#ffffff",
   "background_color": "#ffffff",
-  "icons": [
+   "icons": [
     {
       "src": "/icons/android-icon-36x36.png",
       "sizes": "36x36",
