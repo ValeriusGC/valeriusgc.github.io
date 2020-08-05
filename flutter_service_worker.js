@@ -11,7 +11,7 @@ const RESOURCES = {
 "index.html": "28fbab68e057170f278cc241120723ac",
 "/": "28fbab68e057170f278cc241120723ac",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
-"main.dart.js": "a02650e63b02ed01a99e8cae100682a2",
+"main.dart.js": "de87e1a448dc10ce719f6066f8ebe469",
 "manifest.json": "1df6170abfa056ff7baa7da1100bae3f",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1"
@@ -100,7 +100,7 @@ self.addEventListener("activate", function(event) {
 // worker cache.
 self.addEventListener("fetch", (event) => {
   var origin = self.location.origin;
-  var key = event.request.url.substring(origin.length - 1);
+  var key = event.request.url.substring(origin.length + 1);
   // Redirect URLs to the index.html
   if (event.request.url == origin || event.request.url.startsWith(origin + '/#')) {
     key = '/';
