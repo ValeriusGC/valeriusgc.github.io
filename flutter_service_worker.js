@@ -65,7 +65,7 @@ self.addEventListener("activate", function(event) {
       var oldManifest = await manifest.json();
       var origin = self.location.origin;
       for (var request of await contentCache.keys()) {
-        var key = request.url.substring(origin.length + 1);
+        var key = request.url.substring(origin.length - 1);
         if (key == "") {
           key = "/";
         }
@@ -100,7 +100,7 @@ self.addEventListener("activate", function(event) {
 // worker cache.
 self.addEventListener("fetch", (event) => {
   var origin = self.location.origin;
-  var key = event.request.url.substring(origin.length + 1);
+  var key = event.request.url.substring(origin.length - 1);
   // Redirect URLs to the index.html
   if (event.request.url == origin || event.request.url.startsWith(origin + '/#')) {
     key = '/';
