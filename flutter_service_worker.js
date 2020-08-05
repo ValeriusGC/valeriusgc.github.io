@@ -100,7 +100,7 @@ self.addEventListener("activate", function(event) {
 // worker cache.
 self.addEventListener("fetch", (event) => {
   var origin = self.location.origin;
-  var key = event.request.url.substring(origin.length + 1);
+  var key = event.request.url.substring(origin.length - 1);
   // Redirect URLs to the index.html
   if (event.request.url == origin || event.request.url.startsWith(origin + '/#')) {
     key = '/';
