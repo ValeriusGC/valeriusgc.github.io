@@ -1,5 +1,7 @@
 {
-  "list": "My list-en",
+  "TEMPLATE": "THIS IS A TEMPLATE",
+  "profiles": "Profiles",
+  "list": "Lists list",
   "title": "Hello",
   "debug_mode": "debug mode",
   "msg": "Hello {} in the {} world ",
