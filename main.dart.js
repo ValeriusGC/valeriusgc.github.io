@@ -18582,11 +18582,11 @@ case 3:P.bX(new P.bQ(Date.now(),!1).j(0)+": main: ")
 s=4
 return P.q($.dr().a1G($.adi()),$async$AP)
 case 4:F.aqm($.adq())
-q=H.a([new P.d_("en",null,"US"),new P.d_("ru",null,"RU")],t._p)
+q=H.a([new P.d_("en",null,null),new P.d_("ru",null,null)],t._p)
 P.lh("Start","Easy Localization")
 if($.aZ==null)N.ajg()
 p=$.aZ
-p.KX(new L.tH(new F.HA(null),q,new P.d_("en",null,"US"),"assets/translations",null))
+p.KX(new L.tH(new F.HA(null),q,new P.d_("en",null,null),"assets/translations",null))
 p.AH()
 return P.x(null,r)}})
 return P.y($async$AP,r)},
