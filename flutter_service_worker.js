@@ -3,10 +3,10 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/assets/translations/ru-RU.json": "c949bf2ee166acad235c88c417846ace",
-"assets/assets/translations/en-US.json": "351680c5b10182a7f265900f94d7b3b8",
-"assets/assets/translations/en.json": "0c8f035cb579947dd89ed4645c4f264d",
-"assets/assets/translations/ru.json": "0cf5b230f6648047df9c78c45ba19e27",
+  "assets/assets/translations/ru-RU.json": "cfce7d4eaa1e0969d89cfe5bc5321221",
+"assets/assets/translations/en-US.json": "b12c31ecf769eb19500c8120a5542a47",
+"assets/assets/translations/en.json": "a6075c578bbd8ecd3a54f2df5e52c3bb",
+"assets/assets/translations/ru.json": "2673159bc8d8aa7d9bb3fad58ea10323",
 "assets/NOTICES": "dbb0deec686d261e0c13b373df2dc433",
 "assets/AssetManifest.json": "a3e674db82f3fa72b6917416152832ff",
 "assets/fonts/MaterialIcons-Regular.otf": "a68d2a28c526b3b070aefca4bac93d25",
@@ -19,7 +19,7 @@ const RESOURCES = {
 "index.html": "28fbab68e057170f278cc241120723ac",
 "/": "28fbab68e057170f278cc241120723ac",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
-"main.dart.js": "07c1c09527bed0e58b849160471ee311",
+"main.dart.js": "a44e16d2f84d8a26ae70ff4d350516da",
 "manifest.json": "1df6170abfa056ff7baa7da1100bae3f",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1"
