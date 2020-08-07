@@ -1,5 +1,6 @@
 {
   "TEMPLATE": "THIS IS A TEMPLATE",
+  "profiles": "Profiles",
   "list": "My list en-US",
   "title": "Hello",
   "debug_mode": "debug mode",
