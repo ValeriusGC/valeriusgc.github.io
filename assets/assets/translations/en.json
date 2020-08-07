@@ -1,6 +1,7 @@
 {
   "TEMPLATE": "THIS IS A TEMPLATE",
   "profiles": "Profiles",
+  "editor_page": "Editor Page",
   "list": "Lists list",
   "title": "Hello",
   "debug_mode": "debug mode",
