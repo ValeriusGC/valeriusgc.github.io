@@ -3,10 +3,12 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/assets/translations/en.json": "08cf879a63eae03dd26e87575a342eaa",
-"assets/assets/translations/ru.json": "fba8a10d675a5bf15a4de8cb999be665",
+  "assets/assets/translations/ru-RU.json": "6060b3f9ade64e363f41a8947d8d6af5",
+"assets/assets/translations/en-US.json": "a2f57a2dc81df9d70c3cf5c50ac476e0",
+"assets/assets/translations/en.json": "a2f57a2dc81df9d70c3cf5c50ac476e0",
+"assets/assets/translations/ru.json": "0cf5b230f6648047df9c78c45ba19e27",
 "assets/NOTICES": "dbb0deec686d261e0c13b373df2dc433",
-"assets/AssetManifest.json": "3a41c3347595939850fcaf150918bae8",
+"assets/AssetManifest.json": "a3e674db82f3fa72b6917416152832ff",
 "assets/fonts/MaterialIcons-Regular.otf": "a68d2a28c526b3b070aefca4bac93d25",
 "assets/FontManifest.json": "dc3d03800ccca4601324923c0b1d6d57",
 "assets/packages/easy_localization/i18n/en-US.json": "5bd908341879a431441c8208ae30e4fd",
@@ -17,7 +19,7 @@ const RESOURCES = {
 "index.html": "28fbab68e057170f278cc241120723ac",
 "/": "28fbab68e057170f278cc241120723ac",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
-"main.dart.js": "ac7d7d6d32b8ef4d7916733d402a407e",
+"main.dart.js": "e6bc310a67515321b22a096bdaa3f560",
 "manifest.json": "1df6170abfa056ff7baa7da1100bae3f",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1"
