@@ -18559,7 +18559,7 @@ q=H.a([new P.d0("en",null,"US"),new P.d0("ru",null,"RU")],t._p)
 P.lg("Start","Easy Localization")
 if($.aZ==null)N.aj3()
 p=$.aZ
-p.KX(new L.tG(new F.Ht(null),q,new P.d0("ru",null,"RU"),"assets/translations",null))
+p.KX(new L.tG(new F.Ht(null),q,new P.d0("en",null,"US"),"assets/translations",null))
 p.AH()
 return P.x(null,r)}})
 return P.y($async$acN,r)},

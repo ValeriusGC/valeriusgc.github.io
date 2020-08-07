@@ -1,5 +1,5 @@
 {
-  "list": "My list trans",
+  "list": "My list-en",
   "title": "Hello",
   "msg": "Hello {} in the {} world ",
   "msg_named": "{} are written in the {lang} language",
