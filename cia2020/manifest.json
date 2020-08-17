@@ -1,11 +1,11 @@
 {
-    "name": "list2020",
-    "short_name": "list2020",
+    "name": "cia2020",
+    "short_name": "cia2020",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "List for buy",
+    "description": "Count It All",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
