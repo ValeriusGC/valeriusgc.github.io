@@ -1,4 +1,7 @@
 {
   "profiles": "Профили",
-  "add_profile": "Добавить профиль"
+  "add_profile": "Добавить профиль",
+  "settings": "Настройки",
+  "general_settings": "Общие",
+  "debug_mode": "Режим отладки"
 }

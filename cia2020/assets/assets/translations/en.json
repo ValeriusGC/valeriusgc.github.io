@@ -1,4 +1,7 @@
 {
   "profiles": "Profiles",
-  "add_profile": "Add profile"
+  "add_profile": "Add profile",
+  "settings": "Settings",
+  "general_settings": "General",
+  "debug_mode": "Debug mode"
 }
