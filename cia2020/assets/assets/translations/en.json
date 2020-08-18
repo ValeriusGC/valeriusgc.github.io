@@ -3,5 +3,6 @@
   "add_profile": "Add profile",
   "settings": "Settings",
   "general_settings": "General",
-  "debug_mode": "Debug mode"
+  "debug_mode": "Debug mode",
+  "add_note": "Add note"
 }

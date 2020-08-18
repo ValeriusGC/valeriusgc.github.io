@@ -3,5 +3,6 @@
   "add_profile": "Добавить профиль",
   "settings": "Настройки",
   "general_settings": "Общие",
-  "debug_mode": "Режим отладки"
+  "debug_mode": "Режим отладки",
+  "add_note": "+ заметка"
 }
