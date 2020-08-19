@@ -17,7 +17,7 @@ const RESOURCES = {
 "assets/assets/images/icon_profile_woman_002.png": "dc8452da96102b08e320aee3a19f0a3d",
 "assets/assets/translations/en.json": "068266d81ca0462ea8a7579f8db91859",
 "assets/assets/translations/ru.json": "6041cd659cf9f54089bff15797d6f394",
-"assets/NOTICES": "6bc42c3082b582b3bced88c9f9839997",
+"assets/NOTICES": "c144af5811a01400fa22e9b5e832d65e",
 "assets/AssetManifest.json": "2cfe8adb048e326c06be1ccf2bcd825b",
 "assets/fonts/MaterialIcons-Regular.otf": "a68d2a28c526b3b070aefca4bac93d25",
 "assets/FontManifest.json": "dc3d03800ccca4601324923c0b1d6d57",
@@ -29,7 +29,7 @@ const RESOURCES = {
 "index.html": "e2e607d6aecc28eb13f28bc4179e5635",
 "/": "e2e607d6aecc28eb13f28bc4179e5635",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
-"main.dart.js": "89f26704b96b9478f236f566ace6b221",
+"main.dart.js": "1ace92786a46fb4522e1284e58c0b054",
 "manifest.json": "7ea128407400134c5e09cf2511b0e15f",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1"
