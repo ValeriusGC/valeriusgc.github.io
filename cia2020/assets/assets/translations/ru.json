@@ -4,5 +4,6 @@
   "settings": "Настройки",
   "general_settings": "Общие",
   "debug_mode": "Режим отладки",
-  "add_note": "+ заметка"
+  "add_note": "+ заметка",
+  "editor_page_title": "Редактор списка"
 }
