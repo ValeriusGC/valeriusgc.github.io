@@ -15,8 +15,8 @@ const RESOURCES = {
 "assets/assets/images/icon_profile_woman_003.png": "2e56ab6068f522fd7f2573ed1a91a60e",
 "assets/assets/images/icon_profile_ghost_001.png": "4a111431045a17d0c2fd38e37e45e704",
 "assets/assets/images/icon_profile_woman_002.png": "dc8452da96102b08e320aee3a19f0a3d",
-"assets/assets/translations/en.json": "ee28f332fb05c96fef84ddcfa2eee75f",
-"assets/assets/translations/ru.json": "eb5414275b45385987c6b57ce86a59a6",
+"assets/assets/translations/en.json": "58d1dfbecbc61477274ddc0f080050ac",
+"assets/assets/translations/ru.json": "051f6054c5874dce01af77f931be56c6",
 "assets/NOTICES": "c144af5811a01400fa22e9b5e832d65e",
 "assets/AssetManifest.json": "2cfe8adb048e326c06be1ccf2bcd825b",
 "assets/fonts/MaterialIcons-Regular.otf": "a68d2a28c526b3b070aefca4bac93d25",
@@ -28,11 +28,11 @@ const RESOURCES = {
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "115e937bb829a890521f72d2e664b632",
 "index.html": "e2e607d6aecc28eb13f28bc4179e5635",
 "/": "e2e607d6aecc28eb13f28bc4179e5635",
-"favicon.png": "5dcef449791fa27946b3d35ad8803796",
-"main.dart.js": "01304aacf6e43793f1ab790d9b918528",
+"favicon.png": "f86a7c347a4521c20227f9e46725c58b",
+"main.dart.js": "ee94f259f32b06b7de14d2605079974d",
 "manifest.json": "7ea128407400134c5e09cf2511b0e15f",
-"icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
-"icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1"
+"icons/Icon-192.png": "6fb6833f53335f73b0bca58cfe268b24",
+"icons/Icon-512.png": "893915769c1c0274fbcd6358787b7a8c"
 };
 
 // The application shell files that are downloaded before a service worker can

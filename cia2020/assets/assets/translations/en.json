@@ -4,7 +4,10 @@
   "settings": "Settings",
   "general_settings": "General",
   "debug_mode": "Debug mode",
-  "add_note": "Add note",
+  "debug_mode_desc": "Shows debug information on pages",
+  "add_list": "+ list",
   "lists_page_title": "Lists",
-  "editor_page_title": "List editor"
+  "editor_page_title": "List editor",
+  "title_field_hint": "Enter title",
+  "default_list_title": "Enter title"
 }

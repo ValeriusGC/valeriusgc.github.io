@@ -4,7 +4,9 @@
   "settings": "Настройки",
   "general_settings": "Общие",
   "debug_mode": "Режим отладки",
-  "add_note": "+ заметка",
+  "debug_mode_desc": "Отображает отладочную информацию на страницах",
+  "add_list": "+ список",
   "lists_page_title": "Списки",
-  "editor_page_title": "Редактор списка"
+  "editor_page_title": "Редактор списка",
+  "title_field_hint": "Введите название списка"
 }
