@@ -1,6 +1,6 @@
 {
-    "name": "educat",
-    "short_name": "educat",
+    "name": "f_educat",
+    "short_name": "f_educat",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
