@@ -1,0 +1,13 @@
+{
+  "profiles": "Profiles",
+  "add_profile": "Add profile",
+  "settings": "Settings",
+  "general_settings": "General",
+  "debug_mode": "Debug mode",
+  "debug_mode_desc": "Shows debug information on pages",
+  "add_list": "+ list",
+  "lists_page_title": "Lists",
+  "editor_page_title": "List editor",
+  "title_field_hint": "Enter title",
+  "default_list_title": "Enter title"
+}
