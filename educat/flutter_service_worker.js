@@ -38,8 +38,8 @@ const RESOURCES = {
 "assets/packages/font_awesome_flutter/lib/fonts/fa-regular-400.ttf": "a126c025bab9a1b4d8ac5534af76a208",
 "assets/packages/font_awesome_flutter/lib/fonts/fa-solid-900.ttf": "d80ca32233940ebadc5ae5372ccd67f9",
 "assets/packages/font_awesome_flutter/lib/fonts/fa-brands-400.ttf": "831eb40a2d76095849ba4aecd4340f19",
-"index.html": "bcd89bf27fe2a60ec955d089671cf7ff",
-"/": "bcd89bf27fe2a60ec955d089671cf7ff",
+"index.html": "58bc58e67e6579f6e6ead982484e40d8",
+"/": "58bc58e67e6579f6e6ead982484e40d8",
 "manifest.json": "b326460e36849eff03f31f8f3d3c6a42",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
@@ -57,13 +57,13 @@ const CORE = [
 "assets/NOTICES",
 "assets/AssetManifest.json",
 "assets/FontManifest.json"];
+
 // During install, the TEMP cache is populated with the application shell files.
 self.addEventListener("install", (event) => {
-  self.skipWaiting();
   return event.waitUntil(
     caches.open(TEMP).then((cache) => {
-      return cache.addAll(
-        CORE.map((value) => new Request(value + '?revision=' + RESOURCES[value], {'cache': 'reload'})));
+      // Provide a 'reload' param to ensure the latest version is downloaded.
+      return cache.addAll(CORE.map((value) => new Request(value, {'cache': 'reload'})));
     })
   );
 });
@@ -78,6 +78,7 @@ self.addEventListener("activate", function(event) {
       var tempCache = await caches.open(TEMP);
       var manifestCache = await caches.open(MANIFEST);
       var manifest = await manifestCache.match('manifest');
+
       // When there is no prior manifest, clear the entire cache.
       if (!manifest) {
         await caches.delete(CACHE_NAME);
@@ -91,6 +92,7 @@ self.addEventListener("activate", function(event) {
         await manifestCache.put('manifest', new Response(JSON.stringify(RESOURCES)));
         return;
       }
+
       var oldManifest = await manifest.json();
       var origin = self.location.origin;
       for (var request of await contentCache.keys()) {
@@ -128,33 +130,24 @@ self.addEventListener("activate", function(event) {
 // The fetch handler redirects requests for RESOURCE files to the service
 // worker cache.
 self.addEventListener("fetch", (event) => {
-  if (event.request.method !== 'GET') {
-    return;
-  }
   var origin = self.location.origin;
   var key = event.request.url.substring(origin.length + 1);
   // Redirect URLs to the index.html
-  if (key.indexOf('?v=') != -1) {
-    key = key.split('?v=')[0];
-  }
-  if (event.request.url == origin || event.request.url.startsWith(origin + '/#') || key == '') {
+  if (event.request.url == origin || event.request.url.startsWith(origin + '/#')) {
     key = '/';
   }
-  // If the URL is not the RESOURCE list then return to signal that the
-  // browser should take over.
+  // If the URL is not the RESOURCE list, skip the cache.
   if (!RESOURCES[key]) {
-    return;
-  }
-  // If the URL is the index.html, perform an online-first request.
-  if (key == '/') {
-    return onlineFirst(event);
+    return event.respondWith(fetch(event.request));
   }
   event.respondWith(caches.open(CACHE_NAME)
     .then((cache) =>  {
       return cache.match(event.request).then((response) => {
         // Either respond with the cached resource, or perform a fetch and
-        // lazily populate the cache.
-        return response || fetch(event.request).then((response) => {
+        // lazily populate the cache. Ensure the resources are not cached
+        // by the browser for longer than the service worker expects.
+        var modifiedRequest = new Request(event.request, {'cache': 'reload'});
+        return response || fetch(modifiedRequest).then((response) => {
           cache.put(event.request, response.clone());
           return response;
         });
@@ -167,12 +160,11 @@ self.addEventListener('message', (event) => {
   // SkipWaiting can be used to immediately activate a waiting service worker.
   // This will also require a page refresh triggered by the main worker.
   if (event.data === 'skipWaiting') {
-    self.skipWaiting();
-    return;
+    return self.skipWaiting();
   }
-  if (event.data === 'downloadOffline') {
+
+  if (event.message === 'downloadOffline') {
     downloadOffline();
-    return;
   }
 });
 
@@ -195,26 +187,4 @@ async function downloadOffline() {
     }
   }
   return contentCache.addAll(resources);
-}
-
-// Attempt to download the resource online before falling back to
-// the offline cache.
-function onlineFirst(event) {
-  return event.respondWith(
-    fetch(event.request).then((response) => {
-      return caches.open(CACHE_NAME).then((cache) => {
-        cache.put(event.request, response.clone());
-        return response;
-      });
-    }).catch((error) => {
-      return caches.open(CACHE_NAME).then((cache) => {
-        return cache.match(event.request).then((response) => {
-          if (response != null) {
-            return response;
-          }
-          throw error;
-        });
-      });
-    })
-  );
 }
