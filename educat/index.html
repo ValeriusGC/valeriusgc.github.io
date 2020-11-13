@@ -35,8 +35,8 @@
        https://developers.google.com/web/fundamentals/primers/service-workers -->
   <script>
     if ('serviceWorker' in navigator) {
-      window.addEventListener('flutter-first-frame', function () {
-        navigator.serviceWorker.register('flutter_service_worker.js?v=1818168433');
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('flutter_service_worker.js');
       });
     }
   </script>
