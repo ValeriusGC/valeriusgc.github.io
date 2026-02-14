@@ -1,0 +1,13 @@
+{
+  "name": "customIcons",
+  "version": 1,
+  "icons": {
+    "ic.accessibility": "accessibility.svg",
+    "ic.battery-half-green": "battery-half-green.svg",
+    "ic.battery-half-red": "battery-half-red.svg",
+    "ic.emotion-dissatisfied": "emotion-dissatisfied.svg",
+    "ic.emotion-neutral": "emotion-neutral.svg",
+    "ic.emotion-satisfied": "emotion-satisfied.svg",
+    "ic.settings": "settings.svg"
+  }
+}

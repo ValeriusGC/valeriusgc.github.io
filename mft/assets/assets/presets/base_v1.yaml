@@ -1,0 +1,1005 @@
+# Preset конфигурация для базового набора сущностей
+# Версия схемы БД: 1
+# Preset код: base_v1
+#
+# Этот файл содержит все preset-сущности приложения:
+# - GlobalTag (глобальные теги с иерархией L1/L2)
+# - ActivityKind (типы активностей: regular и contextual)
+# - ProcessType (типы процессов: regular и contextual)
+# - ContextualTag (контекстные теги для contextual ActivityKind)
+
+schemaVersion: 1
+presetCode: base_v1
+
+# Глобальные теги (GlobalTag / ActivityTag)
+# Поддерживают иерархию L1/L2 через поле parent
+globalTags:
+  # L1 теги
+  - code: work
+    nameKey: tagWorkName
+    descriptionKey: null
+    parent: null
+    visual:
+      color: red
+      icon: ic.emotion-dissatisfied
+      background: null
+
+  - code: study
+    nameKey: tagStudyName
+    descriptionKey: null
+    parent: null
+    visual:
+      color: blue
+      icon: null
+      background: null
+
+  - code: home
+    nameKey: tagHomeName
+    descriptionKey: null
+    parent: null
+    visual:
+      color: null
+      icon: null
+      background: null
+
+  - code: body
+    nameKey: tagBodyName
+    descriptionKey: null
+    parent: null
+    visual:
+      color: null
+      icon: null
+      background: null
+
+  - code: hobby
+    nameKey: tagHobbyName
+    descriptionKey: null
+    parent: null
+    visual:
+      color: null
+      icon: null
+      background: null
+
+  - code: activity
+    nameKey: tagActivityName
+    descriptionKey: null
+    parent: null
+    visual:
+      color: null
+      icon: null
+      background: null
+
+  - code: pause
+    nameKey: tagPauseName
+    descriptionKey: null
+    parent: null
+    visual:
+      color: null
+      icon: null
+      background: null
+
+  - code: car
+    nameKey: tagCarName
+    descriptionKey: null
+    parent: null
+    visual:
+      color: null
+      icon: null
+      background: null
+
+  - code: shopping
+    nameKey: tagShoppingName
+    descriptionKey: null
+    parent: null
+    visual:
+      color: null
+      icon: null
+      background: null
+
+  - code: simple
+    nameKey: tagSimpleName
+    descriptionKey: null
+    parent: null
+    visual:
+      color: null
+      icon: null
+      background: null
+
+  # L2 теги - Работа (parent: work)
+  - code: work_main
+    nameKey: tagWorkMainName
+    descriptionKey: null
+    parent: work
+    visual:
+      color: null
+      icon: null
+      background: null
+
+  - code: work_personal
+    nameKey: tagWorkPersonalName
+    descriptionKey: null
+    parent: work
+    visual:
+      color: null
+      icon: null
+      background: null
+
+  - code: work_hack
+    nameKey: tagWorkHackName
+    descriptionKey: null
+    parent: work
+    visual:
+      color: null
+      icon: null
+      background: null
+
+  - code: work_misc
+    nameKey: tagWorkMiscName
+    descriptionKey: null
+    parent: work
+    visual:
+      color: null
+      icon: null
+      background: null
+
+  # L2 теги - Учёба (parent: study)
+  - code: study_courses
+    nameKey: tagStudyCoursesName
+    descriptionKey: null
+    parent: study
+    visual:
+      color: null
+      icon: null
+      background: null
+
+  - code: study_lectures
+    nameKey: tagStudyLecturesName
+    descriptionKey: null
+    parent: study
+    visual:
+      color: null
+      icon: null
+      background: null
+
+  - code: study_practice
+    nameKey: tagStudyPracticeName
+    descriptionKey: null
+    parent: study
+    visual:
+      color: null
+      icon: null
+      background: null
+
+  - code: study_misc
+    nameKey: tagStudyMiscName
+    descriptionKey: null
+    parent: study
+    visual:
+      color: null
+      icon: null
+      background: null
+
+  # L2 теги - Дом (parent: home)
+  - code: home_repair
+    nameKey: tagHomeRepairName
+    descriptionKey: null
+    parent: home
+    visual:
+      color: null
+      icon: null
+      background: null
+
+  - code: home_cleaning
+    nameKey: tagHomeCleaningName
+    descriptionKey: null
+    parent: home
+    visual:
+      color: null
+      icon: null
+      background: null
+
+  - code: home_garden
+    nameKey: tagHomeGardenName
+    descriptionKey: null
+    parent: home
+    visual:
+      color: null
+      icon: null
+      background: null
+
+  - code: home_misc
+    nameKey: tagHomeMiscName
+    descriptionKey: null
+    parent: home
+    visual:
+      color: null
+      icon: null
+      background: null
+
+  # L2 теги - Тело (parent: body)
+  - code: body_sport
+    nameKey: tagBodySportName
+    descriptionKey: null
+    parent: body
+    visual:
+      color: null
+      icon: null
+      background: null
+
+  - code: body_doctor
+    nameKey: tagBodyDoctorName
+    descriptionKey: null
+    parent: body
+    visual:
+      color: null
+      icon: null
+      background: null
+
+  - code: body_nutrition
+    nameKey: tagBodyNutritionName
+    descriptionKey: null
+    parent: body
+    visual:
+      color: null
+      icon: null
+      background: null
+
+  - code: body_shower
+    nameKey: tagBodyShowerName
+    descriptionKey: null
+    parent: body
+    visual:
+      color: null
+      icon: null
+      background: null
+
+  - code: body_sleep
+    nameKey: tagBodySleepName
+    descriptionKey: null
+    parent: body
+    visual:
+      color: null
+      icon: null
+      background: null
+
+  - code: body_toilet
+    nameKey: tagBodyToiletName
+    descriptionKey: null
+    parent: body
+    visual:
+      color: null
+      icon: null
+      background: null
+
+  - code: body_misc
+    nameKey: tagBodyMiscName
+    descriptionKey: null
+    parent: body
+    visual:
+      color: null
+      icon: null
+      background: null
+
+  # L2 теги - Хобби (parent: hobby)
+  - code: hobby_music
+    nameKey: tagHobbyMusicName
+    descriptionKey: null
+    parent: hobby
+    visual:
+      color: null
+      icon: null
+      background: null
+
+  - code: hobby_reading
+    nameKey: tagHobbyReadingName
+    descriptionKey: null
+    parent: hobby
+    visual:
+      color: null
+      icon: null
+      background: null
+
+  - code: hobby_travel
+    nameKey: tagHobbyTravelName
+    descriptionKey: null
+    parent: hobby
+    visual:
+      color: null
+      icon: null
+      background: null
+
+  - code: hobby_games
+    nameKey: tagHobbyGamesName
+    descriptionKey: null
+    parent: hobby
+    visual:
+      color: null
+      icon: null
+      background: null
+
+  - code: hobby_misc
+    nameKey: tagHobbyMiscName
+    descriptionKey: null
+    parent: hobby
+    visual:
+      color: null
+      icon: null
+      background: null
+
+  # L2 теги - Активность (parent: activity)
+  - code: activity_walk
+    nameKey: tagActivityWalkName
+    descriptionKey: null
+    parent: activity
+    visual:
+      color: null
+      icon: null
+      background: null
+
+  - code: activity_bike
+    nameKey: tagActivityBikeName
+    descriptionKey: null
+    parent: activity
+    visual:
+      color: null
+      icon: null
+      background: null
+
+  - code: activity_yoga
+    nameKey: tagActivityYogaName
+    descriptionKey: null
+    parent: activity
+    visual:
+      color: null
+      icon: null
+      background: null
+
+  - code: activity_waiting
+    nameKey: tagActivityWaitingName
+    descriptionKey: null
+    parent: activity
+    visual:
+      color: null
+      icon: null
+      background: null
+
+  - code: activity_misc
+    nameKey: tagActivityMiscName
+    descriptionKey: null
+    parent: activity
+    visual:
+      color: null
+      icon: null
+      background: null
+
+  # L2 теги - Пауза (parent: pause)
+  - code: pause_coffee
+    nameKey: tagPauseCoffeeName
+    descriptionKey: null
+    parent: pause
+    visual:
+      color: null
+      icon: null
+      background: null
+
+  - code: pause_lunch
+    nameKey: tagPauseLunchName
+    descriptionKey: null
+    parent: pause
+    visual:
+      color: null
+      icon: null
+      background: null
+
+  - code: pause_meditation
+    nameKey: tagPauseMeditationName
+    descriptionKey: null
+    parent: pause
+    visual:
+      color: null
+      icon: null
+      background: null
+
+  - code: pause_sleep
+    nameKey: tagPauseSleepName
+    descriptionKey: null
+    parent: pause
+    visual:
+      color: null
+      icon: null
+      background: null
+
+  - code: pause_entertainment
+    nameKey: tagPauseEntertainmentName
+    descriptionKey: null
+    parent: pause
+    visual:
+      color: null
+      icon: null
+      background: null
+
+  - code: pause_internet
+    nameKey: tagPauseInternetName
+    descriptionKey: null
+    parent: pause
+    visual:
+      color: null
+      icon: null
+      background: null
+
+  - code: pause_social
+    nameKey: tagPauseSocialName
+    descriptionKey: null
+    parent: pause
+    visual:
+      color: null
+      icon: null
+      background: null
+
+  - code: pause_call
+    nameKey: tagPauseCallName
+    descriptionKey: null
+    parent: pause
+    visual:
+      color: null
+      icon: null
+      background: null
+
+  - code: pause_tv
+    nameKey: tagPauseTVName
+    descriptionKey: null
+    parent: pause
+    visual:
+      color: null
+      icon: null
+      background: null
+
+  - code: pause_video_games
+    nameKey: tagPauseVideoGamesName
+    descriptionKey: null
+    parent: pause
+    visual:
+      color: null
+      icon: null
+      background: null
+
+  - code: pause_news
+    nameKey: tagPauseNewsName
+    descriptionKey: null
+    parent: pause
+    visual:
+      color: null
+      icon: null
+      background: null
+
+  - code: pause_music
+    nameKey: tagPauseMusicName
+    descriptionKey: null
+    parent: pause
+    visual:
+      color: null
+      icon: null
+      background: null
+
+  - code: pause_misc
+    nameKey: tagPauseMiscName
+    descriptionKey: null
+    parent: pause
+    visual:
+      color: null
+      icon: null
+      background: null
+
+  - code: pause_boss
+    nameKey: tagPauseBossName
+    descriptionKey: null
+    parent: pause
+    visual:
+      color: null
+      icon: null
+      background: null
+
+  # L2 теги - Авто (parent: car)
+  - code: car_driving
+    nameKey: tagCarDrivingName
+    descriptionKey: null
+    parent: car
+    visual:
+      color: null
+      icon: null
+      background: null
+
+  - code: car_traffic_jam
+    nameKey: tagCarTrafficJamName
+    descriptionKey: null
+    parent: car
+    visual:
+      color: null
+      icon: null
+      background: null
+
+  - code: car_refuel
+    nameKey: tagCarRefuelName
+    descriptionKey: null
+    parent: car
+    visual:
+      color: null
+      icon: null
+      background: null
+
+  - code: car_wash
+    nameKey: tagCarWashName
+    descriptionKey: null
+    parent: car
+    visual:
+      color: null
+      icon: null
+      background: null
+
+  - code: car_traffic_light
+    nameKey: tagCarTrafficLightName
+    descriptionKey: null
+    parent: car
+    visual:
+      color: null
+      icon: null
+      background: null
+
+  - code: car_misc
+    nameKey: tagCarMiscName
+    descriptionKey: null
+    parent: car
+    visual:
+      color: null
+      icon: null
+      background: null
+
+  # L2 теги - Просто тег (parent: simple)
+  - code: simple_sub1
+    nameKey: tagSimpleSub1Name
+    descriptionKey: null
+    parent: simple
+    visual:
+      color: null
+      icon: null
+      background: null
+
+  - code: simple_sub2
+    nameKey: tagSimpleSub2Name
+    descriptionKey: null
+    parent: simple
+    visual:
+      color: null
+      icon: null
+      background: null
+
+  - code: simple_sub3
+    nameKey: tagSimpleSub3Name
+    descriptionKey: null
+    parent: simple
+    visual:
+      color: null
+      icon: null
+      background: null
+
+  - code: simple_sub4
+    nameKey: tagSimpleSub4Name
+    descriptionKey: null
+    parent: simple
+    visual:
+      color: null
+      icon: null
+      background: null
+
+  - code: simple_sub5
+    nameKey: tagSimpleSub5Name
+    descriptionKey: null
+    parent: simple
+    visual:
+      color: null
+      icon: null
+      background: null
+
+# ActivityKind
+activityKinds:
+  - code: work_working
+    nameKey: activityKindAkWorkWorkingName
+    descriptionKey: null
+    kind: regular
+    visual:
+      color: null
+      icon: null
+      background: null
+
+  - code: work_break
+    nameKey: activityKindAkWorkBreakName
+    descriptionKey: null
+    kind: regular
+
+  - code: trip_driving
+    nameKey: activityKindAkTripDrivingName
+    descriptionKey: null
+    kind: regular
+
+  - code: trip_stopped
+    nameKey: activityKindAkTripStoppedName
+    descriptionKey: null
+    kind: regular
+
+  - code: workout_exercising
+    nameKey: activityKindAkWorkoutExercisingName
+    descriptionKey: null
+    kind: regular
+
+  - code: workout_resting
+    nameKey: activityKindAkWorkoutRestingName
+    descriptionKey: null
+    kind: regular
+
+  - code: simple_activity
+    nameKey: activityKindAkSimpleActivityName
+    descriptionKey: null
+    kind: regular
+
+  - code: activity_1
+    nameKey: activityKindAkActivity1Name
+    descriptionKey: null
+    kind: regular
+
+  - code: activity_2
+    nameKey: activityKindAkActivity2Name
+    descriptionKey: null
+    kind: regular
+
+  - code: activity_3
+    nameKey: activityKindAkActivity3Name
+    descriptionKey: null
+    kind: regular
+
+  - code: activity_4
+    nameKey: activityKindAkActivity4Name
+    descriptionKey: null
+    kind: regular
+
+  - code: activity_5
+    nameKey: activityKindAkActivity5Name
+    descriptionKey: null
+    kind: regular
+
+  - code: crawling
+    nameKey: activityKindAkCrawlingName
+    descriptionKey: null
+    kind: regular
+
+  - code: doing
+    nameKey: activityKindAkDoingName
+    descriptionKey: null
+    kind: regular
+
+  - code: doing_nothing
+    nameKey: activityKindAkDoingNothingName
+    descriptionKey: null
+    kind: regular
+
+  - code: doing_unclear
+    nameKey: activityKindAkDoingUnclearName
+    descriptionKey: null
+    kind: regular
+
+  - code: running
+    nameKey: activityKindAkRunningName
+    descriptionKey: null
+    kind: regular
+
+  - code: showing_off
+    nameKey: activityKindAkShowingOffName
+    descriptionKey: null
+    kind: regular
+
+  - code: sleeping
+    nameKey: activityKindAkSleepingName
+    descriptionKey: null
+    kind: regular
+
+  - code: smoking
+    nameKey: activityKindAkSmokingName
+    descriptionKey: null
+    kind: regular
+
+  - code: wasting_time
+    nameKey: activityKindAkWastingTimeName
+    descriptionKey: null
+    kind: regular
+
+  - code: mood
+    nameKey: activityKindAkMoodName
+    descriptionKey: null
+    kind: contextual
+
+# ProcessType
+processTypes:
+  - code: work
+    nameKey: processTypePtWorkName
+    descriptionKey: null
+    kind: regular
+    activityKindCodes:
+      - work_working
+      - work_break
+    visual:
+      color: null
+      icon: null
+      background: null
+
+  - code: trip
+    nameKey: processTypePtTripName
+    descriptionKey: null
+    kind: regular
+    activityKindCodes:
+      - trip_driving
+      - trip_stopped
+
+  - code: workout
+    nameKey: processTypePtWorkoutName
+    descriptionKey: null
+    kind: regular
+    activityKindCodes:
+      - workout_exercising
+      - workout_resting
+
+  - code: simple
+    nameKey: processTypePtSimpleName
+    descriptionKey: null
+    kind: regular
+    activityKindCodes:
+      - simple_activity
+
+  - code: mood
+    nameKey: processTypePtMoodName
+    descriptionKey: null
+    kind: contextual
+    activityKindCodes:
+      - mood
+
+# ContextualTag
+contextualTags:
+  # Mood v1.0 теги (заменяют старые mood_happy, mood_sad, mood_calm, mood_angry)
+  # Флаги не указываются - они дефолтные для всех тегов из YAML (preset: true, остальные: false)
+  # Поле i18n - справочная информация для программиста (не парсится в DTO, но должно быть в YAML)
+  - code: mood_joyful
+    activityKind: mood
+    nameKey: contextualTagMoodJoyfulName
+    i18n:
+      ru: "Радостное"
+      en: "Joyful"
+    descriptionKey: null
+    visual:
+      color: "#FFFFD54F"
+      icon: null
+      background: null
+
+  - code: mood_inspired
+    activityKind: mood
+    nameKey: contextualTagMoodInspiredName
+    i18n:
+      ru: "Воодушевлённое"
+      en: "Inspired"
+    descriptionKey: null
+    visual:
+      color: "#FFFFB300"
+      icon: null
+      background: null
+
+  - code: mood_calm
+    activityKind: mood
+    nameKey: contextualTagMoodCalmName
+    i18n:
+      ru: "Спокойное"
+      en: "Calm"
+    descriptionKey: null
+    visual:
+      color: "#FF81C784"
+      icon: null
+      background: null
+
+  - code: mood_neutral
+    activityKind: mood
+    nameKey: contextualTagMoodNeutralName
+    i18n:
+      ru: "Нейтральное"
+      en: "Neutral"
+    descriptionKey: null
+    visual:
+      color: "#FFB0BEC5"
+      icon: null
+      background: null
+
+  - code: mood_tired
+    activityKind: mood
+    nameKey: contextualTagMoodTiredName
+    i18n:
+      ru: "Усталое"
+      en: "Tired"
+    descriptionKey: null
+    visual:
+      color: "#FF90A4AE"
+      icon: null
+      background: null
+
+  - code: mood_sad
+    activityKind: mood
+    nameKey: contextualTagMoodSadName
+    i18n:
+      ru: "Грусть"
+      en: "Sad"
+    descriptionKey: null
+    visual:
+      color: "#FF64B5F6"
+      icon: null
+      background: null
+
+  - code: mood_anxious
+    activityKind: mood
+    nameKey: contextualTagMoodAnxiousName
+    i18n:
+      ru: "Тревожное"
+      en: "Anxious"
+    descriptionKey: null
+    visual:
+      color: "#FFFF8A65"
+      icon: null
+      background: null
+
+  - code: mood_irritated
+    activityKind: mood
+    nameKey: contextualTagMoodIrritatedName
+    i18n:
+      ru: "Раздражённое"
+      en: "Irritated"
+    descriptionKey: null
+    visual:
+      color: "#FFE57373"
+      icon: null
+      background: null
+
+# EventType (типы событий с иерархией L1/L2)
+# Поддерживают иерархию L1/L2 через поле parent
+# ⚠️ ВАЖНО (P1-7): Порядок элементов в YAML не имеет значения!
+# L2 может идти раньше L1, все зависимости резолвятся по code
+# Поле i18n - справочная информация для программиста (не парсится в DTO, но должно быть в YAML)
+eventTypes:
+  # L1 типы
+  - code: food
+    nameKey: eventTypeFoodName
+    i18n:
+      ru: "Еда"
+      en: "Food"
+    descriptionKey: null
+    parent: null
+    visual:
+      color: "#FFFFAA00"
+      icon: food
+      background: null
+
+  # L2 типы - Еда (parent: food)
+  - code: sandwich
+    nameKey: eventTypeSandwichName
+    i18n:
+      ru: "Бутерброд"
+      en: "Sandwich"
+    descriptionKey: null
+    parent: food
+    visual:
+      color: "#FFDDBB88"
+      icon: sandwich
+      background: null
+
+  - code: apple
+    nameKey: eventTypeAppleName
+    i18n:
+      ru: "Яблоко"
+      en: "Apple"
+    descriptionKey: null
+    parent: food
+    visual:
+      color: "#FF88CC44"
+      icon: apple
+      background: null
+
+  - code: pear
+    nameKey: eventTypePearName
+    i18n:
+      ru: "Груша"
+      en: "Pear"
+    descriptionKey: null
+    parent: food
+    visual:
+      color: "#FFAADD66"
+      icon: pear
+      background: null
+
+  # L1 типы - Спорт
+  - code: sport
+    nameKey: eventTypeSportName
+    i18n:
+      ru: "Спорт"
+      en: "Sport"
+    descriptionKey: null
+    parent: null
+    visual:
+      color: "#FFF5C842"
+      icon: sport
+      background: null
+
+  # L2 типы - Спорт (parent: sport)
+  - code: run
+    nameKey: eventTypeRunName
+    i18n:
+      ru: "Бег"
+      en: "Run"
+    descriptionKey: null
+    parent: sport
+    visual:
+      color: "#FFFF4444"
+      icon: run
+      background: null
+
+  - code: bike
+    nameKey: eventTypeBikeName
+    i18n:
+      ru: "Велосипед"
+      en: "Bike"
+    descriptionKey: null
+    parent: sport
+    visual:
+      color: "#FF44BBFF"
+      icon: bike
+      background: null
+
+  - code: swim
+    nameKey: eventTypeSwimName
+    i18n:
+      ru: "Плавание"
+      en: "Swim"
+    descriptionKey: null
+    parent: sport
+    visual:
+      color: "#FF3399FF"
+      icon: ic.emotion-dissatisfied
+      background: yellow
+
+  - code: swearing
+    nameKey: eventTypeSwearingName
+    i18n:
+      ru: "Ругательство"
+      en: "Swearing"
+    descriptionKey: null
+    parent: null
+    visual:
+      color: "#FF3399FF"
+      icon: ic.emotion-dissatisfied
+      background: green
+
+  - code: polite
+    nameKey: eventTypePoliteName
+    i18n:
+      ru: "Вежливоcть"
+      en: "Polite"
+    descriptionKey: null
+    parent: null
+    visual:
+      color: "#FF3399FF"
+      icon: polite
+      background: null
+
+  - code: nonpolite
+    nameKey: eventTypeNonPoliteName
+    i18n:
+      ru: "Невежливоcть"
+      en: "NonPolite"
+    descriptionKey: null
+    parent: null
+    visual:
+      color: "#FFFF33BB"
+      icon: ic.alarm
+      background: null
+
