@@ -39,9 +39,15 @@ export function normalizeLocale(raw) {
   return SUPPORTED_LOCALES.includes(s) ? s : null;
 }
 
+/** Пути относительно index.html — работают в подпапке (GitHub Pages) и при копировании dist. */
+export function sitePath(relative) {
+  const path = String(relative).replace(/^\//, '');
+  return path;
+}
+
 /** @param {string} locale */
 export function resolveLocaleMedia(locale) {
-  const base = `/assets/locales/${locale}`;
+  const base = sitePath(`assets/locales/${locale}`);
   return {
     heroVideo: `${base}/hero.mp4`,
     heroPoster: `${base}/hero-poster.webp`,
@@ -55,7 +61,7 @@ let _localeJsonVersion = '';
 export async function initLocaleBundleVersion() {
   if (_localeJsonVersion) return _localeJsonVersion;
   try {
-    const res = await fetch('/build-info.json', { cache: 'no-store' });
+    const res = await fetch(sitePath('build-info.json'), { cache: 'no-store' });
     if (res.ok) {
       const info = await res.json();
       _localeJsonVersion = String(info.localesVersion ?? info.build ?? '');
@@ -69,7 +75,7 @@ export async function initLocaleBundleVersion() {
 
 export function localeJsonUrl(locale) {
   const q = _localeJsonVersion ? `?v=${encodeURIComponent(_localeJsonVersion)}` : '';
-  return `/locales/${locale}.json${q}`;
+  return `${sitePath(`locales/${locale}.json`)}${q}`;
 }
 
 /** Запасные подписи (EN), если JSON устарел в кэше. */
