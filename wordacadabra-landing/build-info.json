@@ -1,0 +1,16 @@
+{
+  "build": "wordacadabra-landing",
+  "locales": [
+    "en",
+    "es",
+    "de",
+    "fr",
+    "pt-BR",
+    "it",
+    "pl",
+    "cs",
+    "ro",
+    "ru"
+  ],
+  "localesVersion": "4b3b7c9db2394ccd"
+}
